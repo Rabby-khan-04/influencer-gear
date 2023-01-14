@@ -30,6 +30,7 @@
 img {
     max-width: 100%;
     width: 100%;
+    margin: 0;
 }
 
 /* Global Css Starts */
@@ -197,10 +198,223 @@ nav {
 
 .vendor__img {}
 
-hr{
+hr {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right,  rgba(120, 120, 133, 0), rgba(120, 120, 133, 0.5), rgba(120, 120, 133, 0));
+    background-image: linear-gradient(to right, rgba(120, 120, 133, 0), rgba(120, 120, 133, 0.5), rgba(120, 120, 133, 0));
 }
 
 /* Vendor Css Ends */
+
+
+/* Products Section Starts */
+
+.product-section {}
+
+.product-seciton__container {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.product-section__title {
+    font-family: var(--font-poppins);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 70px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.products__wrapper {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.product-card {
+    box-shadow: var(--card-shadow);
+    padding: 17px 14px;
+    border-radius: 5px;
+}
+
+.product__img {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.product__title {
+    font-family: var(--font-poppins);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    color: var(--card-title-color);
+    margin-bottom: 6px;
+
+}
+
+.product__price {
+    font-family: var(--font-inter);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.product_rating {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+.Product__stars {}
+
+.Product__stars>img {
+    width: 16px;
+}
+
+.rating-point {
+    font-family: var(--font-inter);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1px;
+    color: #5E6366;
+
+}
+
+.product_details {
+    font-family: var(--font-inter);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.018em;
+    color: #787885;
+}
+
+.pagination {
+    text-align: right;
+    margin-top: 50px;
+}
+
+.pagination__btn {
+    color: var(--primary-color);
+    font-family: var(--font-poppins);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-block;
+}
+
+.pagination_btn span {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+/* Products Section Ends */
+
+
+
+/* Featured Product section Starts */
+
+.featured-product {
+    padding: 100px 0;
+}
+
+.featured-product__container {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    align-items: center;
+}
+
+.featured-product__image {
+    flex: 1 0 405px;
+}
+
+.featured-product__description {}
+
+.featured-product__title {
+    font-family: var(--font-poppins);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 60px;
+    color: var(--featured-color);
+}
+
+.featured-product__text {
+    font-family: var(--font-poppins);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6C6C6C;
+}
+
+.featured-product__btn {}
+
+/* Featured Product section Ends */
+
+
+/* Footer starts */
+
+footer {
+    background-color: var(--featured-color);
+    padding: 50px 0;
+}
+
+.footer__container {
+    max-width: 262px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer__logo__text {
+    font-family: var(--font-poppins);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.copy-right {
+    font-family: var(--font-manrope);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #D9DBE1;
+    text-align: center;
+}
+
+.footer__social-media {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+}
+
+.social-media__item {
+    
+}
+
+.social-media__item a {}
+
+/* Footer Ends */
